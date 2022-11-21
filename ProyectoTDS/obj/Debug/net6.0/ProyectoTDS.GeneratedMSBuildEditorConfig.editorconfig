@@ -1,0 +1,75 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = browser
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = true
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = ProyectoTDS
+build_property.RootNamespace = ProyectoTDS
+build_property.ProjectDir = C:\Users\gerso\source\repos\ProyectoTDS\ProyectoTDS\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\gerso\source\repos\ProyectoTDS\ProyectoTDS
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/gerso/source/repos/ProyectoTDS/ProyectoTDS/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gerso/source/repos/ProyectoTDS/ProyectoTDS/Pages/Galeria.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2FsZXJpYS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gerso/source/repos/ProyectoTDS/ProyectoTDS/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gerso/source/repos/ProyectoTDS/ProyectoTDS/Pages/Inicio.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5pY2lvLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gerso/source/repos/ProyectoTDS/ProyectoTDS/Pages/Japones.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSmFwb25lcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gerso/source/repos/ProyectoTDS/ProyectoTDS/Pages/Mexicano.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWV4aWNhbm8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gerso/source/repos/ProyectoTDS/ProyectoTDS/Pages/Sobre_Nosotros.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU29icmVfTm9zb3Ryb3MucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gerso/source/repos/ProyectoTDS/ProyectoTDS/Pages/Staff.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3RhZmYucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gerso/source/repos/ProyectoTDS/ProyectoTDS/Shared/FooterMain.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEZvb3Rlck1haW4ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gerso/source/repos/ProyectoTDS/ProyectoTDS/Shared/Info.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEluZm8ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gerso/source/repos/ProyectoTDS/ProyectoTDS/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/gerso/source/repos/ProyectoTDS/ProyectoTDS/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-v4b9936fa6
+
+[C:/Users/gerso/source/repos/ProyectoTDS/ProyectoTDS/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-a2wxzyuebu
+
+[C:/Users/gerso/source/repos/ProyectoTDS/ProyectoTDS/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
