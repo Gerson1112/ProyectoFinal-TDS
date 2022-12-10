@@ -1,11 +1,9 @@
 ﻿@page "/admin"
-@*
-@using Microsoft.AspNetCore.Mvc
-@using Microsoft.Extensions.Logging
-@using RestSharp
-@inject ILogger<addModelDTO> Logger
+@*@using System.Net
+@using Newtonsoft.Json
 
 <PageTitle>Administracion</PageTitle>
+<h1>Hello world</h1>
 
 <div class="menu-box">
 	<div class="container">
@@ -17,55 +15,87 @@
             </div>
 	    </div>
 
-        <EditForm Model="@_addmodel" OnSubmit="Enviar" class="w3-container" >
+        <EditForm Model="@_addmodel">
             <DataAnnotationsValidator />
             <ValidationSummary />
             <div class="form-group">
                 <label for="Name">Nombre de Destino</label>
-                <InputTextArea class="w3-input" id="Name" @bind-Value="_addmodel.name" rows="1"/>
+                <InputText class="w3-input" id="Name" @bind-Value="_addmodel.name"/>
+                <ValidationMessage For=@(() => _addmodel.name) />
             </div>
             <br><br>
             <div class="form-group">
                 <label>Region</label>
-                <InputSelect id="Region" @bind-Value="_addmodel.region">
+                <InputSelect class="w3-input" id="Region" @bind-Value="_addmodel.region">
                     <option disabled selected>Escoge...</option>
                     <option value="Norte">Norte</option>
                     <option value="Sur">Sur</option>
                     <option value="Este">Este</option>
                 </InputSelect>
-                ||
-                <label for="Foto">Foto</label>
-                <InputFile class="form-control-file" id="Foto" @bind-Value="_addmodel.foto"/>
-                <br><br>
+                <ValidationMessage For=@(() => _addmodel.region) />
             </div>
+			<div class="form-group">
+				<label for="Foto">Foto</label>
+                <InputText class="form-control" id="Foto" @bind-Value="_addmodel.foto"/>
+                <ValidationMessage For=@(() => _addmodel.foto) />
+			</div>
             <br><br>
             <div class="form-group" >
                 <label for="Descripcion">Descripcion</label>
                 <InputTextArea class="w3-input" id="Descripcion" @bind-Value="_addmodel.descripcion" rows="3"/>
+                <ValidationMessage For=@(() => _addmodel.descripcion) />
             </div>
             <br ><br>
-            <button type="submit" class="btn btn-primary">Añadir</button>
+            <button type="button" class="btn btn-primary mb-3" onclick="@Enviar()">Añadir</button>
+             @if (ok)
+            {
+                <div class="alert alert-success" role="alert">
+                    Se ha agregado el destino!
+                </div>
+            }
+            @if(invalid)
+            {
+                <div class="alert alert-danger" role="alert">
+                    No fue posible enviar el formulario!
+                </div>
+            }
 
         </EditForm>
+       
     </div>
 </div>
-@code {
-    public partial class AddModel
-    {
-        [Inject]
-        private IHttpClientFactory ClientFactory { get; set; }
-        private addModelDTO _addmodel { get; set; } = new addModelDTO();
 
-        public void Enviar()
-        {
-            var client = new RestClient("http://localhost:7014");
-            var request = new RestRequest("/api/turismo", Method.Post);
-            request.AddParameter("destino", _addmodel.name);
-            request.AddParameter("foto", _addmodel.foto);
-            request.AddParameter("descripcion", _addmodel.descripcion)                                                    ;
-            request.AddParameter("region", _addmodel.region);
-            var response = client.Execute(request);
-        }
-    }
+
+@code {
+    public dynamic Editable { get; set; }
+    string jsonString;
+    public string? message;
+    public bool ok = true;
+    public bool invalid = true;
+    private addModelDTO _addmodel { get; set; } = new addModelDTO();
+
+    //private addModelDTO[]? data;
+
+    public void Enviar(){
+        //try
+        //{
+        //    jsonString = JsonConvert.SerializeObject(_addmodel);
+        //    Uri url = new Uri("https:localhost:44380/api/Turismo");
+        //    WebClient client = new WebClient();
+        //    var data = await client.UploadStringTaskAsync(url, jsonString);
+        //    Editable = JsonConvert.DeserializeObject(data);
+        //    if (Editable != null)
+        //    {
+        //        ok = true; 
+        //    }
+        //}
+        //catch (Exception e)
+        //{
+        //    invalid = true; 
+        //    Console.WriteLine(e.Message);
+        //}
+	}
 }
+
+
 *@
