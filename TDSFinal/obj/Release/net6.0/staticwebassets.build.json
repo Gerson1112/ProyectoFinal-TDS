@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Pid7dvpZdV6Q5D/Uh6xKiECvckKOobEP1pOK+k7wc20=",
+  "Hash": "S0BpS0Ej+uj3wD8Wj+oUFBMJz0vftx+xCshbqxpsh3g=",
   "Source": "TDSFinal",
   "BasePath": "_content/TDSFinal",
   "Mode": "Default",
@@ -29459,6 +29459,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Imagenes\\InfoJpeg.jfif"
+    },
+    {
+      "Identity": "C:\\Users\\gerso\\Escritorio\\C9\\TDS\\ProyectoFinal-TDS\\TDSFinal\\wwwroot\\Imagenes\\Turismo.jpg",
+      "SourceId": "TDSFinal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gerso\\Escritorio\\C9\\TDS\\ProyectoFinal-TDS\\TDSFinal\\wwwroot\\",
+      "BasePath": "_content/TDSFinal",
+      "RelativePath": "Imagenes/Turismo.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagenes\\Turismo.jpg"
     },
     {
       "Identity": "C:\\Users\\gerso\\Escritorio\\C9\\TDS\\ProyectoFinal-TDS\\TDSFinal\\wwwroot\\images.ico",
