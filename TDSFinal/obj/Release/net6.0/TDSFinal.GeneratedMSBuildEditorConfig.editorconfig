@@ -5,72 +5,73 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TDSFinal
 build_property.RootNamespace = TDSFinal
-build_property.ProjectDir = C:\Users\gerso\Escritorio\C9\TDS\ProyectoFinal-TDS\TDSFinal\
+build_property.ProjectDir = C:\Users\JeremyEB\Documents\ITLA\Proyecto_TDS\ProyectoFinal-TDS\ProyectoFinal-TDS\TDSFinal\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\gerso\Escritorio\C9\TDS\ProyectoFinal-TDS\TDSFinal
+build_property.MSBuildProjectDirectory = C:\Users\JeremyEB\Documents\ITLA\Proyecto_TDS\ProyectoFinal-TDS\ProyectoFinal-TDS\TDSFinal
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/gerso/Escritorio/C9/TDS/ProyectoFinal-TDS/TDSFinal/App.razor]
+[C:/Users/JeremyEB/Documents/ITLA/Proyecto_TDS/ProyectoFinal-TDS/ProyectoFinal-TDS/TDSFinal/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gerso/Escritorio/C9/TDS/ProyectoFinal-TDS/TDSFinal/Pages/Admin.razor]
+[C:/Users/JeremyEB/Documents/ITLA/Proyecto_TDS/ProyectoFinal-TDS/ProyectoFinal-TDS/TDSFinal/Pages/Admin.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gerso/Escritorio/C9/TDS/ProyectoFinal-TDS/TDSFinal/Pages/Counter.razor]
+[C:/Users/JeremyEB/Documents/ITLA/Proyecto_TDS/ProyectoFinal-TDS/ProyectoFinal-TDS/TDSFinal/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gerso/Escritorio/C9/TDS/ProyectoFinal-TDS/TDSFinal/Pages/Destino.razor]
+[C:/Users/JeremyEB/Documents/ITLA/Proyecto_TDS/ProyectoFinal-TDS/ProyectoFinal-TDS/TDSFinal/Pages/Destino.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVzdGluby5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gerso/Escritorio/C9/TDS/ProyectoFinal-TDS/TDSFinal/Pages/FetchData.razor]
+[C:/Users/JeremyEB/Documents/ITLA/Proyecto_TDS/ProyectoFinal-TDS/ProyectoFinal-TDS/TDSFinal/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gerso/Escritorio/C9/TDS/ProyectoFinal-TDS/TDSFinal/Pages/Index.razor]
+[C:/Users/JeremyEB/Documents/ITLA/Proyecto_TDS/ProyectoFinal-TDS/ProyectoFinal-TDS/TDSFinal/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gerso/Escritorio/C9/TDS/ProyectoFinal-TDS/TDSFinal/Shared/FooterMain.razor]
+[C:/Users/JeremyEB/Documents/ITLA/Proyecto_TDS/ProyectoFinal-TDS/ProyectoFinal-TDS/TDSFinal/Shared/FooterMain.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEZvb3Rlck1haW4ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gerso/Escritorio/C9/TDS/ProyectoFinal-TDS/TDSFinal/Shared/LoginDisplay.razor]
+[C:/Users/JeremyEB/Documents/ITLA/Proyecto_TDS/ProyectoFinal-TDS/ProyectoFinal-TDS/TDSFinal/Shared/LoginDisplay.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXExvZ2luRGlzcGxheS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gerso/Escritorio/C9/TDS/ProyectoFinal-TDS/TDSFinal/Shared/SurveyPrompt.razor]
+[C:/Users/JeremyEB/Documents/ITLA/Proyecto_TDS/ProyectoFinal-TDS/ProyectoFinal-TDS/TDSFinal/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gerso/Escritorio/C9/TDS/ProyectoFinal-TDS/TDSFinal/_Imports.razor]
+[C:/Users/JeremyEB/Documents/ITLA/Proyecto_TDS/ProyectoFinal-TDS/ProyectoFinal-TDS/TDSFinal/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gerso/Escritorio/C9/TDS/ProyectoFinal-TDS/TDSFinal/Shared/MainLayout.razor]
+[C:/Users/JeremyEB/Documents/ITLA/Proyecto_TDS/ProyectoFinal-TDS/ProyectoFinal-TDS/TDSFinal/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-ouv0y099s2
 
-[C:/Users/gerso/Escritorio/C9/TDS/ProyectoFinal-TDS/TDSFinal/Shared/NavMenu.razor]
+[C:/Users/JeremyEB/Documents/ITLA/Proyecto_TDS/ProyectoFinal-TDS/ProyectoFinal-TDS/TDSFinal/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-5z5mtvmtbr
 
-[C:/Users/gerso/Escritorio/C9/TDS/ProyectoFinal-TDS/TDSFinal/Pages/Error.cshtml]
+[C:/Users/JeremyEB/Documents/ITLA/Proyecto_TDS/ProyectoFinal-TDS/ProyectoFinal-TDS/TDSFinal/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gerso/Escritorio/C9/TDS/ProyectoFinal-TDS/TDSFinal/Pages/_Host.cshtml]
+[C:/Users/JeremyEB/Documents/ITLA/Proyecto_TDS/ProyectoFinal-TDS/ProyectoFinal-TDS/TDSFinal/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/gerso/Escritorio/C9/TDS/ProyectoFinal-TDS/TDSFinal/Pages/_Layout.cshtml]
+[C:/Users/JeremyEB/Documents/ITLA/Proyecto_TDS/ProyectoFinal-TDS/ProyectoFinal-TDS/TDSFinal/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
