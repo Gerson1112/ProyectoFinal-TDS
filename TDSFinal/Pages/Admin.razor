@@ -1,6 +1,6 @@
-﻿@page "/admin"
-@*
-@using Microsoft.AspNetCore.Mvc
+﻿    @page "/admin"
+
+@*@using Microsoft.AspNetCore.Mvc
 @using Microsoft.Extensions.Logging
 @using RestSharp
 @inject ILogger<addModelDTO> Logger
@@ -49,6 +49,7 @@
         </EditForm>
     </div>
 </div>
+
 @code {
     public partial class AddModel
     {
@@ -66,6 +67,5 @@
             request.AddParameter("region", _addmodel.region);
             var response = client.Execute(request);
         }
-    }
+    }*@
 }
-*@

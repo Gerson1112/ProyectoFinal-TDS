@@ -177,39 +177,6 @@
         }
       },
       {
-        "HashCode": -515118240,
-        "Kind": "Components.Component",
-        "Name": "TDSFinal.App",
-        "AssemblyName": "TDSFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TDSFinal.App"
-        }
-      },
-      {
-        "HashCode": -43172678,
-        "Kind": "Components.Component",
-        "Name": "TDSFinal.App",
-        "AssemblyName": "TDSFinal",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "TDSFinal.App"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "TDSFinal.App",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
         "HashCode": -1639340352,
         "Kind": "Components.Component",
         "Name": "TDSFinal.Shared.FooterMain",
@@ -454,6 +421,39 @@
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
           "Common.TypeName": "TDSFinal.Shared.NavMenu",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -515118240,
+        "Kind": "Components.Component",
+        "Name": "TDSFinal.App",
+        "AssemblyName": "TDSFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TDSFinal.App"
+        }
+      },
+      {
+        "HashCode": -43172678,
+        "Kind": "Components.Component",
+        "Name": "TDSFinal.App",
+        "AssemblyName": "TDSFinal",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "TDSFinal.App"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "TDSFinal.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G8Y+sD/KmC0mW35Ti3jb9ZTReD4shv1zOtnGP1MNFC9A54UO+mrGxXHjjIhg7Szt7KXzOxnVlIDEI5piMSBR8w==",
+  "dgSpecHash": "JtuiVQzUCTrc+UO7lms0wSP28mMbbX9JzCgUpeywZow/maScdFzmzLlQVpUa5FXeqChjYq4+9w06G6MVeR+2og==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gerso\\Escritorio\\C9\\TDS\\ProyectoFinal-TDS\\TDSFinal\\TDSFinal.csproj",
+  "projectFilePath": "C:\\Users\\gerso\\source\\repos\\TDSFinal\\TDSFinal\\TDSFinal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gerso\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\gerso\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",
@@ -21,6 +21,8 @@
     "C:\\Users\\gerso\\.nuget\\packages\\microsoft.identitymodel.protocols\\6.12.1\\microsoft.identitymodel.protocols.6.12.1.nupkg.sha512",
     "C:\\Users\\gerso\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\6.12.1\\microsoft.identitymodel.protocols.openidconnect.6.12.1.nupkg.sha512",
     "C:\\Users\\gerso\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.12.1\\microsoft.identitymodel.tokens.6.12.1.nupkg.sha512",
+    "C:\\Users\\gerso\\.nuget\\packages\\newtonsoft.json\\12.0.1\\newtonsoft.json.12.0.1.nupkg.sha512",
+    "C:\\Users\\gerso\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\gerso\\.nuget\\packages\\restsharp\\108.0.2\\restsharp.108.0.2.nupkg.sha512",
     "C:\\Users\\gerso\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\gerso\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.6.0\\system.diagnostics.diagnosticsource.4.6.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gerso\\Escritorio\\C9\\TDS\\ProyectoFinal-TDS\\TDSFinal\\TDSFinal.csproj": {}
+    "C:\\Users\\gerso\\source\\repos\\TDSFinal\\TDSFinal\\TDSFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gerso\\Escritorio\\C9\\TDS\\ProyectoFinal-TDS\\TDSFinal\\TDSFinal.csproj": {
+    "C:\\Users\\gerso\\source\\repos\\TDSFinal\\TDSFinal\\TDSFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gerso\\Escritorio\\C9\\TDS\\ProyectoFinal-TDS\\TDSFinal\\TDSFinal.csproj",
+        "projectUniqueName": "C:\\Users\\gerso\\source\\repos\\TDSFinal\\TDSFinal\\TDSFinal.csproj",
         "projectName": "TDSFinal",
-        "projectPath": "C:\\Users\\gerso\\Escritorio\\C9\\TDS\\ProyectoFinal-TDS\\TDSFinal\\TDSFinal.csproj",
+        "projectPath": "C:\\Users\\gerso\\source\\repos\\TDSFinal\\TDSFinal\\TDSFinal.csproj",
         "packagesPath": "C:\\Users\\gerso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gerso\\Escritorio\\C9\\TDS\\ProyectoFinal-TDS\\TDSFinal\\obj\\",
+        "outputPath": "C:\\Users\\gerso\\source\\repos\\TDSFinal\\TDSFinal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gerso\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -61,6 +61,10 @@
             "Microsoft.Identity.Web.UI": {
               "target": "Package",
               "version": "[1.16.0, )"
+            },
+            "Newtonsoft.Json.Bson": {
+              "target": "Package",
+              "version": "[1.0.2, )"
             },
             "RestSharp": {
               "target": "Package",
