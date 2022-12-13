@@ -1168,11 +1168,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gerso\\source\\repos\\TDSFinal\\TDSFinal\\TDSFinal.csproj",
+      "projectUniqueName": "C:\\Users\\gerso\\Escritorio\\C9\\TDS\\ProyectoFinal-TDS\\TDSFinal\\TDSFinal.csproj",
       "projectName": "TDSFinal",
-      "projectPath": "C:\\Users\\gerso\\source\\repos\\TDSFinal\\TDSFinal\\TDSFinal.csproj",
+      "projectPath": "C:\\Users\\gerso\\Escritorio\\C9\\TDS\\ProyectoFinal-TDS\\TDSFinal\\TDSFinal.csproj",
       "packagesPath": "C:\\Users\\gerso\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gerso\\source\\repos\\TDSFinal\\TDSFinal\\obj\\",
+      "outputPath": "C:\\Users\\gerso\\Escritorio\\C9\\TDS\\ProyectoFinal-TDS\\TDSFinal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gerso\\AppData\\Roaming\\NuGet\\NuGet.Config",

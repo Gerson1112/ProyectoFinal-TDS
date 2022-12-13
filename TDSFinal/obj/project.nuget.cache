@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JtuiVQzUCTrc+UO7lms0wSP28mMbbX9JzCgUpeywZow/maScdFzmzLlQVpUa5FXeqChjYq4+9w06G6MVeR+2og==",
+  "dgSpecHash": "VbT7MUB1gRcEJEKE/H6KUKwqZFvgFTvdXZECR7uNHNGnYGXcdnj6IHFSIwL9QaV+NLPufhxrUuY8QdP05eu0BQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gerso\\source\\repos\\TDSFinal\\TDSFinal\\TDSFinal.csproj",
+  "projectFilePath": "C:\\Users\\gerso\\Escritorio\\C9\\TDS\\ProyectoFinal-TDS\\TDSFinal\\TDSFinal.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gerso\\.nuget\\packages\\azure.core\\1.6.0\\azure.core.1.6.0.nupkg.sha512",
     "C:\\Users\\gerso\\.nuget\\packages\\azure.identity\\1.3.0\\azure.identity.1.3.0.nupkg.sha512",
