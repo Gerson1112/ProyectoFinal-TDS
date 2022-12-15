@@ -1,0 +1,88 @@
+
+th{
+  color: #082743;
+}
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-button{
+  display:flex;
+  justify-content:space-between;
+}
+.flex-buttonn{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  
+}
+.push-right {
+  margin-left: auto;
+}
+.text-gris{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  color:grey;
+  font-weight:600;
+}
+.chiquito{
+  font-weight:400;
+  size: 14px;
+}
+.borderr{
+  border-radius: 10px;
+}
+
+.btnBlue{
+  background: #003467;
+  border-radius: 10px;
+}
+
+
+.table-card{
+  border-radius: 11px;
+  border-end-end-radius: 0px;
+  border-end-start-radius: 0px;
+  border: 0px;
+  .card-header, .card-body{
+      padding: 0px;
+  }
+
+  .card-body{
+      table{
+          padding-bottom: 0px;
+          margin-bottom: 0px;
+          border-end-end-radius: 0px;
+          border-end-start-radius: 0px;
+          thead{
+              tr{
+                  th{
+                      color: white !important;
+                  }
+
+                  th:first-child{
+                      border-top-left-radius: 10px;
+                  }
+
+                  th:last-child{
+                      border-top-right-radius: 10px;
+                  }
+              }
+          }
+
+          tbody{
+              padding-bottom: 0px;
+          }
+      }
+  }
+}
+
+.btn-outline-danger{
+background-color: #ff2f00;
+}
+.img-peque{
+  width: 100px;
+  height: 100px;
+  content: 100%;
+}
