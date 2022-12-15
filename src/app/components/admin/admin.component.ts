@@ -13,6 +13,8 @@ import { DatabaseServices } from 'src/app/shared/services/database.service';
 export class AdminComponent implements OnInit{
   Datos:Database[]=[];
   ticketForms: FormGroup[] = [];
+  ticketFormsEdit: FormGroup[] = [];
+  state:boolean = false;
   validateedit:boolean = false;
   validatecreate:boolean = false;
   validatetable:boolean = true;
@@ -23,11 +25,11 @@ export class AdminComponent implements OnInit{
     { id: 2, name: "Sur" },
     { id: 3, name: "Este" },
   ];
-  
+
   constructor(private services:DatabaseServices) { }
 
   ngOnInit(): void {
-    this.ticketForms.push(this.buildForm());
+    this.ticketForms.push(this.buildForm(0));
     this.get()
   }
 
@@ -35,7 +37,19 @@ export class AdminComponent implements OnInit{
     this.services.getTurismo().subscribe({
       next:(data)=>{
         this.Datos = data;
-        console.log(data)
+      },
+      error:(err)=>{
+        console.log(err)
+      },
+      complete:()=>{
+      }
+    })
+  }
+
+  getById(id:number){
+    this.services.getTurismoById(id).subscribe({
+      next:(data)=>{
+        this.Datos = data;
       },
       error:(err)=>{
         console.log(err)
@@ -53,17 +67,27 @@ export class AdminComponent implements OnInit{
     })
   }
 
-  buildForm() {
-    return new FormGroup({
-      destino: new FormControl('', [Validators.required]),
-      region: new FormControl('', [Validators.required]),
-      descripcion: new FormControl('', [Validators.required]),
-      foto: new FormControl('', [Validators.required]),
-    });
+  buildForm(id:number) {
+    if(this.state == true){
+      return new FormGroup({
+        destino: new FormControl('', [Validators.required]),
+        region: new FormControl('', [Validators.required]),
+        descripcion: new FormControl('', [Validators.required]),
+        foto: new FormControl('', [Validators.required]),
+      });
+    }
+    else{
+      return new FormGroup({
+        destino: new FormControl('', [Validators.required]),
+        region: new FormControl('', [Validators.required]),
+        descripcion: new FormControl('', [Validators.required]),
+        foto: new FormControl('', [Validators.required]),
+      });
+    }
   }
 
   addForm() {
-    this.ticketForms.push(this.buildForm());
+    this.ticketForms.push(this.buildForm(0));
   }
 
   get formsValid() {
@@ -80,13 +104,11 @@ export class AdminComponent implements OnInit{
     this.validatecreate = false;
     this.validatetable = false;
     localStorage.setItem('id', db.id.toString());
-    
   }
 
   submit() {
     let tickets = this.ticketForms.map(form => form.value);
     const observables = tickets.map(ticket => this.services.post(ticket));
-    
     this.loading = true;
     forkJoin(observables).subscribe({
       next: (data) => {
@@ -94,7 +116,7 @@ export class AdminComponent implements OnInit{
         })
       },
       complete: () => {
-        this.ticketForms = [this.buildForm()];
+        this.ticketForms = [this.buildForm(0)];
         this.loading = false;
         this.validatecreate = false;
         this.get();
@@ -102,7 +124,7 @@ export class AdminComponent implements OnInit{
     })
   }
 
-  submitEdit() {
+  submitEdit(idData:number) {
     let tickets = this.ticketForms.map(form => form.value);
     var id = localStorage.getItem('id');
 
@@ -113,17 +135,16 @@ export class AdminComponent implements OnInit{
     forkJoin(observables).subscribe({
       next: (data) => {
         data.forEach(() => {
-          
+
         })
       },
       complete: () => {
-        this.ticketForms = [this.buildForm()];
+        this.ticketForms = [this.buildForm(idData)];
         this.loading = false;
         this.validateedit = false;
         this.validatetable = true;
         localStorage.removeItem('id')
         this.get()
-        
       }
     })
   }
