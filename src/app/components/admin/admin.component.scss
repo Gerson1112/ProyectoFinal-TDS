@@ -2,6 +2,9 @@
 th{
   color: #082743;
 }
+.head {
+  background: rgba(207, 166, 113, 0.9);
+}
 .flex-container {
   display: flex;
   justify-content: space-between;
@@ -85,4 +88,5 @@ background-color: #ff2f00;
   width: 100px;
   height: 100px;
   content: 100%;
+  border-radius: 20px;
 }

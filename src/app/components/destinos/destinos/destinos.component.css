@@ -109,8 +109,9 @@
     bottom: 0px;
 }
 
-.img-fluid {
-    width: 500px;
+.gallery-single {
+    width: 350px;
     height: 250px;
     margin: 10px;
+    border-radius: 20px;
 }

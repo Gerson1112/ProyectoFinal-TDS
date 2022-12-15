@@ -58,3 +58,9 @@ header.masthead {
   margin-top: 1.5rem;
   margin-bottom: 0;
 }
+
+.btn {
+  border-radius: 20px;
+  background: rgba(207, 166, 113, 0.9);
+}
+
