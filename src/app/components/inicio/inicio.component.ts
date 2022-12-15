@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent {
-  carrousel = ["Bani Playa Salinas.jpg","Bonao Salto de Jima.jpg","Santiago de los Caballeros Monumeto.jpg"]
+  carrousel = ["../../../assets/Imagenes/Anuncios/Bani Playa Salinas.jpg","../../../assets/Imagenes/Anuncios/Bonao Salto de Jima.jpg","../../../assets/Imagenes/Anuncios/Santiago de los Caballeros Monumeto.jpg"]
 
 }

@@ -1,16 +1,32 @@
-    <div class="carrusel">
-       <ngb-carousel>
-           <ng-template ngbSlide *ngFor="let n of carrousel">
-               <div class="picsum-img-wrapper" >
-                   <img src="../../../assets/Imagenes/Anuncios/{{n}}" alt="{{n}}" style="width:100%; height:700px">
-               </div>
-               <div class="carousel-caption" >
-                   <h3 class="titulo-carrusel" style="font-weight: 900;">{{n}}</h3>
-                   <p class="titulo-carrusel">{{n}}</p>
-               </div>
-           </ng-template>
-       </ngb-carousel>
-   </div>
+<ngb-carousel *ngIf="carrousel">
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img [src]="carrousel[0]" alt="Random first slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>10 seconds between slides...</h3>
+			<p>This carousel uses customized default values.</p>
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img [src]="carrousel[1]" alt="Random second slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>No mouse events...</h3>
+			<p>This carousel doesn't pause or resume on mouse events</p>
+		</div>
+	</ng-template>
+	<ng-template ngbSlide>
+		<div class="picsum-img-wrapper">
+			<img [src]="carrousel[2]" alt="Random third slide" />
+		</div>
+		<div class="carousel-caption">
+			<h3>No keyboard...</h3>
+			<p>This carousel uses customized default values.</p>
+		</div>
+	</ng-template>
+</ngb-carousel>
 
   <div class="about-section-box">
     <div class="container">
@@ -24,17 +40,16 @@
                     <br>
                     <h4>Descripcion del país</h4>
                     <p>República Dominicana es el segundo país más grande y más diverso del Caribe. Con vuelos directos desde las principales ciudades de Latinoamérica, Estados Unidos, Canadá y Europa es un país que se destaca por la calidez de su clima y la hospitalidad de su gente. República Dominicana es un destino sin igual que cuenta con una naturaleza extraordinaria, fascinante historia y gran riqueza cultural.</p>
-  
+
                     <p>Rodeada por el Océano Atlántico hacia el Norte y el Mar Caribe hacia el Sur, República Dominicana se enorgullece de contar con más de 1,600 Km. de costa y 400 Km. de las mejores playas del mundo, magníficos hoteles y resorts, e infinidad de opciones en deportes, entretenimiento y recreación. Aquí puedes bailar al ritmo contagioso del merengue, renovarte en nuestros lujosos y variados hoteles, explorar antiguas ruinas,  deleitarte con la mejor gastronomía dominicana, o vivir aventuras ecoturísticas en nuestros magníficos parques naturales, cordilleras, ríos y playas.</p>
                 </div>
             </div>
         </div>
     </div>
   </div>
-  
+
   <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
-  
-      
-  
+
+
+
   <!-- Page Content -->
-  

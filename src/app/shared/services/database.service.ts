@@ -13,11 +13,15 @@ export class DatabaseServices extends BaseServices<Database>
 {
     api:string = environment.apiUrl;
     constructor(override http:HttpClient){
-        super(http,"api/Turismo")    
+        super(http,"api/Turismo")
     }
 
     getTurismo():Observable<any[]>{
         return this.http.get<any[]>(`${this.url}`);
+    }
+
+    getTurismoById(id:number):Observable<any[]>{
+      return this.http.get<any[]>(`${this.url}/${id}`);
     }
 
     postTurismo(data:Database):Observable<Database>{
