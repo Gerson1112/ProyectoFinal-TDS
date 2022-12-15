@@ -1,0 +1,122 @@
+/*------------------------------------------------------------------
+    Gallery
+-------------------------------------------------------------------*/
+
+.gallery-box {
+    padding: 70px 0px;
+}
+
+.tz-gallery {
+    margin-top: 30px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+.tz-gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.gallery-single {
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px #ccc;
+    width: 350px;
+    height: 280px;
+    margin-top: 30px;
+    object-fit: cover;
+}
+.img-fluid {
+    object-fit: cover;
+    width:100%;
+    height:100%;
+}
+
+.why-text {
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    right: 0;
+    height: 100%;
+    background: rgba(207, 166, 113, 0.9);
+    padding: 12px 12px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+.why-text h4 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Arbutus Slab', serif;
+}
+
+.why-text p {
+    color: #ffffff;
+    font-size: 18px;
+    border-bottom: 1px dashed #010101;
+    margin: 0px;
+    padding-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.why-text h5 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.gallery-single:hover .why-text {
+    bottom: 0px;
+}
+
+header.masthead {
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background-image: url("https://fondosmil.com/fondo/14781.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
+    header.masthead .masthead-subheading {
+        font-size: 30px;
+        font-style: italic;
+        line-height: 1.5rem;
+        margin-bottom: 25px;
+        font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+    header.masthead .masthead-heading {
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 3.25rem;
+        margin-bottom: 2rem;
+        font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+
+.text {
+    margin: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.video {
+    margin: 0px auto;
+}
+
+.img-fluid {
+    width: 500px;
+    height: 250px;
+    margin: 10px;
+}
