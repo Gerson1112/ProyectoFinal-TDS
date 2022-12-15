@@ -52,7 +52,6 @@
     display:flex;
     justify-content:space-around;
     flex-wrap:wrap;
-    background-color: red;
 }
 
 .gallery-single {
@@ -108,4 +107,10 @@
 
 .gallery-single:hover .why-text {
     bottom: 0px;
+}
+
+.img-fluid {
+    width: 500px;
+    height: 250px;
+    margin: 10px;
 }

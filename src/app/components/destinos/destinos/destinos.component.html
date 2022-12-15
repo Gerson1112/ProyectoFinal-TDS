@@ -24,7 +24,7 @@
 
         <div class="flexcontainer" *ngIf="Datos != null">
             <div *ngFor="let i of Datos">
-                <div class="gallery-single fix">
+                <div class="gallery-single fix" type="button" data-toggle="modal" data-target="#exampleModalCenter">
                     <img src="{{i.foto}}" class="img-fluid" alt="{{i.destino}}">
                     <div class="why-text">
                         <h4>{{i.destino}}</h4>
@@ -32,9 +32,6 @@
                 </div>
             </div>
         </div>
-        
-        <div class="special-list" type="button" data-toggle="modal" data-target="#exampleModalCenter">
-        
         <!-- Modal -->
         <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered" role="document">
