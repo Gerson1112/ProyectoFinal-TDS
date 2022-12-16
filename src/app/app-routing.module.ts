@@ -5,6 +5,7 @@ import { DestinosComponent } from './components/destinos/destinos/destinos.compo
 import { SobreNosotrosComponent } from './components/sobre-nosotros/sobre-nosotros.component';
 import { NuestroPaisComponent } from './components/nuestro-pais/nuestro-pais.component';
 import { AdminComponent } from './components/admin/admin.component';
+import { ContactoComponent } from './components/contacto/contacto.component';
 
 const routes: Routes = [
 
@@ -28,6 +29,10 @@ const routes: Routes = [
 {
   path:'Admin',
   component:AdminComponent  
+},
+{
+  path:'Contacto',
+  component:ContactoComponent  
 }
 ];
 
