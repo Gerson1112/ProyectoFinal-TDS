@@ -19,6 +19,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { LoginComponent } from './components/login/login.component';
+import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 
 
 @NgModule({
@@ -43,10 +44,11 @@ import { LoginComponent } from './components/login/login.component';
     NgbCarousel,
     NgbModule,
     ReactiveFormsModule,
+    AngularFireAuthModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth())
   ],
-  providers: [NgbCarouselConfig],
+  providers: [NgbCarouselConfig, { provide: FIREBASE_OPTIONS, useValue: environment.firebase}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

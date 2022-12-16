@@ -12,19 +12,14 @@
               <li class="nav-item"><a class="nav-link" href="/Destino">Destinos</a></li>
               <li class="nav-item"><a class="nav-link" href="/Nuestro Pais">Nuestro Pais</a></li>
               <li class="nav-item"><a class="nav-link" href="/Sobre Nosotros">Sobre nosotros</a></li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown-a" data-toggle="dropdown">Mas</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown-a">
-                      <a class="dropdown-item" href="staff">Staff</a>
-                      <a class="dropdown-item" href="galeria">Galeria</a>
-                    </div>
-                </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/Contacto">Contactanos</a>
                 </li>
                 <li class="nav-item">
+                  <a class="nav-link" href="/Login" *ngIf="loginstatus == false">Iniciar Sesion</a>
                 </li>
+                <li class="nav-item"><a class="nav-link"  *ngIf="loginstatus == true" href="/Admin">Agregar Destino</a></li>
+                <li class="nav-item"><a class="nav-link"  *ngIf="loginstatus == true" (click)="singtOut()" >Cerrar Sesion</a></li>
             </ul>
         </div>
     </div>
