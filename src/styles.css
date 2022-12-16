@@ -13,7 +13,7 @@
 @import url(assets/css/animate.css);
 @import url(assets/css/superslides.css);
 @import url(assets/css/baguetteBox.min.css);
-
+/**/
 /*------------------------------------------------------------------
     SKELETON
 -------------------------------------------------------------------*/
@@ -1531,7 +1531,7 @@ html {
     transition: opacity 0.2s ease-out;
     font-size: 30px;
 }
-    
+
 .modal-backdrop{
     z-index: none !important;
 }
