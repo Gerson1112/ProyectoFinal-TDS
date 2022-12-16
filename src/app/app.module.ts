@@ -17,6 +17,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { environment } from 'src/environments/environment';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { provideAuth,getAuth } from '@angular/fire/auth';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
     SobreNosotrosComponent,
     NuestroPaisComponent,
     AdminComponent,
+    ContactoComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
