@@ -71,3 +71,9 @@ width: 100%;
 .slides-pagination a.current {
     background: #222;
 }
+
+.carrusel{
+  width: 90%;
+  height: auto;
+  margin-left: 50px;
+}

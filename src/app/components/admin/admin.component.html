@@ -31,7 +31,7 @@
               <button class="btn btn-sm" (click)="deleteTurismo(db.id)">
                 <i class="fa fa-trash text-danger" title="Borrar destino"></i>
               </button>
-              <button class="btn btn-sm mx-2" (click)="change2(db)">
+              <button class="btn btn-sm mx-2" (click)="change2(db)" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <i class="fa fa-edit text-primary" title="Editar ticket"></i>
               </button>
             </td>
@@ -40,6 +40,56 @@
       </table>
     </div>
   </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Editar</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h1>Editar destino</h1>
+        <div [formGroup]="editForm">
+            <input type="text"
+                    class="form-control"
+                    formControlName="destino"
+                    style="margin-bottom: 10px;"
+                    >
+
+
+            <select formControlName="region" class="form-control" style="margin-bottom: 10px;">
+              <option *ngFor="let amb of regiones" [ngValue]="amb.name">{{amb.name}}</option>
+            </select>
+
+
+            <input type="text"
+                  class="form-control"
+                  formControlName="descripcion"
+                  style="margin-bottom: 10px;"
+                 >
+
+
+            <input type="text"
+                    class="form-control"
+                    formControlName="foto"
+                    style="margin-bottom: 10px;"
+                    >
+
+        </div>
+        <div class="alert alert-success" role="alert" *ngIf="ok">
+          Se actualizo el destino correctamente!
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" (click)="updateForm()">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <div *ngIf="validatecreate">
     <div class="box" style="margin-top:30px;padding-right:5px;">
       <button class="btn text-primary" (click)="addForm()" style="margin-right: 30px;">
@@ -141,7 +191,7 @@
       </tbody>
     </table>
 
-      <button class="btn btn-sm btn-primary text-white" style="margin-right:7%;" (click)="submitEdit(1)" [disabled]="formsValid" >
+      <button class="btn btn-sm btn-primary text-white" style="margin-right:7%;" (click)="submitEdit()" [disabled]="formsValid" >
       Editar
       <i class="fa-regular fa-paper-plane"></i>
       </button>

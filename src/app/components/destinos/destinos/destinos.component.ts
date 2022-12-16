@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DatabaseServices } from 'src/app/shared/services/database.service';
 import { Database } from 'src/app/shared/models/object';
 
+
 @Component({
   selector: 'app-destinos',
   templateUrl: './destinos.component.html',
@@ -9,10 +10,11 @@ import { Database } from 'src/app/shared/models/object';
 })
 export class DestinosComponent implements OnInit {
   Datos:Database[]=[];
+  destino: any = null;
   constructor(private services:DatabaseServices){}
 
   ngOnInit() {
-    this.get();  
+    this.get();
   }
 
   get(){
@@ -26,6 +28,10 @@ export class DestinosComponent implements OnInit {
       complete:()=>{
       }
     })
+  }
+
+  getOne(obj: any){
+   this.destino = obj;
   }
 }
 

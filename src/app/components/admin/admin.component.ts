@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { Data } from '@angular/router';
-import { forkJoin } from 'rxjs';
+import { forkJoin, from } from 'rxjs';
 import { Database } from 'src/app/shared/models/object';
 import { DatabaseServices } from 'src/app/shared/services/database.service';
 
@@ -13,12 +13,21 @@ import { DatabaseServices } from 'src/app/shared/services/database.service';
 export class AdminComponent implements OnInit{
   Datos:Database[]=[];
   ticketForms: FormGroup[] = [];
+  editForm = this.fb.group({
+    id: new FormControl(0, [Validators.required]),
+    destino: new FormControl('', [Validators.required]),
+    region: new FormControl('', [Validators.required]),
+    descripcion: new FormControl('', [Validators.required]),
+    foto: new FormControl('', [Validators.required]),
+  });
   ticketFormsEdit: FormGroup[] = [];
   state:boolean = false;
   validateedit:boolean = false;
   validatecreate:boolean = false;
   validatetable:boolean = true;
   loading:boolean = false;
+  ok = false;
+
 
   regiones = [
     { id: 1, name: "Norte" },
@@ -26,7 +35,7 @@ export class AdminComponent implements OnInit{
     { id: 3, name: "Este" },
   ];
 
-  constructor(private services:DatabaseServices) { }
+  constructor(private services:DatabaseServices, private fb: FormBuilder,) { }
 
   ngOnInit(): void {
     this.ticketForms.push(this.buildForm(0));
@@ -100,10 +109,38 @@ export class AdminComponent implements OnInit{
   }
 
   change2(db:Database) {
-    this.validateedit = true;
+    // this.validateedit = true;
     this.validatecreate = false;
     this.validatetable = false;
+    this.ok = false;
     localStorage.setItem('id', db.id.toString());
+    this.editForm.patchValue({
+      id: db.id,
+      destino: db.destino,
+      region: db.region,
+      descripcion: db.descripcion,
+      foto: db.foto
+    });
+
+  }
+
+  updateForm(){
+    // console.log(this.editForm.value)
+    // let Form = JSON.stringify(this.editForm.value);
+    const id = localStorage.getItem('id');
+    const Form = {
+      descripcion: this.editForm.value.descripcion,
+      destino: this.editForm.value.destino,
+      foto: this.editForm.value.foto,
+      id: this.editForm.value.id,
+      region: this.editForm.value.region,
+    };
+    this.services.putTurismo(Form, Number(id)).subscribe((res) => {
+      console.log(res);
+      this.ok = true;
+      localStorage.removeItem('id')
+      this.get();
+    })
   }
 
   submit() {
@@ -124,7 +161,7 @@ export class AdminComponent implements OnInit{
     })
   }
 
-  submitEdit(idData:number) {
+  submitEdit() {
     let tickets = this.ticketForms.map(form => form.value);
     var id = localStorage.getItem('id');
 
@@ -139,7 +176,7 @@ export class AdminComponent implements OnInit{
         })
       },
       complete: () => {
-        this.ticketForms = [this.buildForm(idData)];
+        this.ticketForms = [this.buildForm(0)];
         this.loading = false;
         this.validateedit = false;
         this.validatetable = true;
